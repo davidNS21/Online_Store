@@ -1,0 +1,57 @@
+@import 'Global';
+
+.header{
+    height: 100px;
+    width: 100%;
+    background-color: $color-header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+        h1{
+            font-family: $font-header;
+            font-size: 50px;
+            padding-left: 20px;
+            color: white;
+        }
+    
+        &__shopping-cart{
+            cursor: pointer;
+        }
+}
+
+.searchbar{
+    border-bottom: 1px solid white;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:focus-within{
+        border-bottom: 1px solid $color-hover;
+    }
+}
+
+input {
+    border: none;
+    background-color: $color-header;
+    opacity: .5;
+    color: white;
+    height: 100%;
+    width: 250px;
+    font-family: $font-page;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:focus{
+        border: none;
+        outline-offset: none;
+        outline: none;
+        color: white;
+    }
+}
+
+.MuiSvgIcon-root{
+    color: white;
+    padding-right: 10px;
+}

@@ -1,0 +1,96 @@
+@import 'Global';
+
+.cart{
+    width: 300px;
+    min-height: 300px;
+    background-color: $color-header;
+    color: white;
+    
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 1s;
+
+    &-content{
+        width: 100%;
+        height: 100%;
+
+        p{
+            padding: 20px;
+        }
+
+        &__header{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid white;
+        }
+
+        &__product{
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+
+            &-image{
+                width: 30%;
+                height: 100%;
+                float: left;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &-details{
+                width: 70%;
+                height: 100%;
+                float: right;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                &-icon{
+                    color: white !important;
+                    align-self: flex-end;
+                    margin-right: 10px;
+                }
+            }
+
+        }
+
+        &__footer{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            &-clearallbutton,
+            &-gotocheckoutbutton{
+                border: 1px solid white;
+                background-color: $color-header;
+                color: white;
+                padding: 8px;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: white;
+                    color: $color-header;
+                }
+            }
+        }
+
+    }
+    
+    
+
+    h2{
+        padding-left: 20px;
+    }
+}
+
+.MuiSvgIcon-root{
+    cursor: pointer;
+}
